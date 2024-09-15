@@ -9,7 +9,7 @@ $(document).on('click', function(){
     console.log('Արի հարսանիք');
 });
 
-var countDownDate = new Date("Oct 30, 2024 00:00:00").getTime();
+var countDownDate = new Date("Oct 29, 2024 00:00:00").getTime();
 
 var x = setInterval(function() {
 
@@ -66,7 +66,7 @@ var styles2 = [
     , 'font-size: 32px'
 ].join(';');
 
-console.log('\n\n%c SAVE THE DATE: 30th Oct, 2024!', styles);
+console.log('\n\n%c SAVE THE DATE: 29th Oct, 2024!', styles);
 
 console.log(
     `%cԱրի Մեր Հարսանիքին!\n\n`,
