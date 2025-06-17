@@ -66,7 +66,7 @@ var styles2 = [
     , 'font-size: 32px'
 ].join(';');
 
-console.log('\n\n%c SAVE THE DATE: 29th Oct, 2024!', styles);
+console.log('\n\n%c SAVE THE DATE: 29th Oct, 2024!', styles,countDownDate,distance);
 
 console.log(
     `%cԱրի Մեր Հարսանիքին!\n\n`,
