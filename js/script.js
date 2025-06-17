@@ -17,7 +17,7 @@ var x = setInterval(function() {
     var now = new Date().getTime();
 
     var distance = countDownDate - now;
-    
+    console.log(countDownDate,distance);
 
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -66,7 +66,7 @@ var styles2 = [
     , 'font-size: 32px'
 ].join(';');
 
-console.log('\n\n%c SAVE THE DATE: 29th Oct, 2024!', styles,countDownDate,distance);
+console.log('\n\n%c SAVE THE DATE: 29th Oct, 2024!', styles);
 
 console.log(
     `%cԱրի Մեր Հարսանիքին!\n\n`,
