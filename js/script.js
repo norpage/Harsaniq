@@ -9,7 +9,7 @@ $(document).on('click', function(){
     console.log('Արի հարսանիք');
 });
 
-var countDownDate = new Date("Oct 29, 2024 00:00:00").getTime();
+var countDownDate = new Date("Oct 29, 2025 00:00:00").getTime();
 
 var x = setInterval(function() {
 
