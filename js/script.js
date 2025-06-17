@@ -13,21 +13,15 @@ var countDownDate = new Date("Oct 29, 2025 00:00:00").getTime();
 
 var x = setInterval(function() {
 
-
     var now = new Date().getTime();
-
     var distance = countDownDate - now;
-    console.log(countDownDate,distance);
-
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
- 
     document.getElementById("time").innerHTML = "<div class='container'><div class='days block'>"+ days + "<br>Օր</div>" + "<div class='hours block'>" + hours + "<br>Ժամ</div>" + "<div class='minutes block'>" + minutes + "<br>Րոպե</div>" + "<div class='seconds block'>" + seconds + "<br>Վայրկյան</div></div>";
     
- 
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("time").innerHTML = "Bless the married couple for happy life!";
@@ -66,9 +60,9 @@ var styles2 = [
     , 'font-size: 32px'
 ].join(';');
 
-console.log('\n\n%c SAVE THE DATE: 29th Oct, 2024!', styles);
+console.log('\n\n%c SAVE THE DATE: 29th Oct, 2025!', styles);
 
 console.log(
     `%cԱրի Մեր Հարսանիքին!\n\n`,
-    'color: yellow; background:tomato; font-size: 24pt; font-weight: bold',
+    styles1
 )
