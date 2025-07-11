@@ -1,63 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-   <link rel="shortcut icon" href="favicon.png" type="image/png">
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Մորի Առիթներ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #fceabb, #f8b500);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-   <title>Հրավիրատոմս | Հոկտեմբերի 29 | Մեծ Հայք, Լիճք, Մարտունի</title>
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            max-width: 800px;
+            width: 90%;
+        }
 
-   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
-   <link rel="stylesheet" href="./css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .link-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .link-card {
+            background-color: #fff7e6;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #fcd165;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-card a {
+            text-decoration: none;
+            color: #c77900;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 600px) {
+            .link-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-
-<body class="body">
-   <div class="back"></div>
-   <!-- partial:index.partial.html -->
-   <div class="sakura-falling"></div>
-   <img src="assets/img/right.png" alt="image-top-right" class="top-right-decoration">
-   <img src="assets/img/left.png" alt="image-top-left" class="top-left-decoration">
-   <section id="media"></section>
-   <div class="wrap">
-      <div class="title">
-         <div style="display: flex; justify-content: center;"><h1>David <span class="and">&</span> Anna</h1></div>
-         <h3>Are getting married</h3>
-         <p>on <span class="date">29 October 2025</span>,</br>
-         At <span class="place">Mets Hayq</span> Lichk, Martuni</p>
-      </div>
-   </div>
-   <div id="time"></div>
-   <p class="dance-med">
-      We Are Waiting For You!
-   </p>
-   <div class="actions">
-      <a href="https://maps.app.goo.gl/zDP8iEgZCKxa5QGv9" target="_blank">
-         <div class="venue">Սրահ</div>
-      </a>
-      <a href="https://maps.app.goo.gl/PLEoRLMghDUKJxoCA" target="_blank">
-         <div class="venue">Եկեղեցի</div>
-      </a>
-      <a href="assets/img/Hraviratoms.jpg" download="Հրավիրատոմս | 29 Հոկտեմբեր | Սիրով սպասում ենք!">
-         <div class="venue">Հրավիրատոմս</div>
-      </a>
-   </div>
-   <p class="footer">
-      Սիրով սպասում ենք ձեզ` կիսելու մեզ հետ մեր երջանիկ օրը! <br>
-      Որևէ հարց ունենալու դեպքում կարող եք կապվել ինձ հետ՝ <br> +374 44 300366
-      <span></span>
-   </p>
-   <div class="music">
-      <audio src="./assets/mp3/song.mp3" id="my_audio" loop="loop" autoplay></audio>
-   </div>
-   <p class="happiness">Միացե՛ք մեր ուրախությանը!<br><a href="https://www.instagram.com/_davmeloyan_?igsh=MTV0d21sMW43Y3RrYg==" target="_blank"
-         class="twitter"><i class="fa fa-instagram"></i></a></p>
-   <!-- partial -->
-   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-   <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
-   <script src="./js/script.js"></script>
+<body>
+<div class="container">
+    <div class="link-list">
+        <div class="link-card"><a href="https://ydd.syntaxacade.my/" target="_blank">Հարսանիքի Դիզայն</a></div>
+        <div class="link-card"><a href="https://example.com/birthday" target="_blank">Ծննդյան Տորթեր</a></div>
+        <div class="link-card"><a href="https://example.com/baby-shower" target="_blank">Baby Shower Գաղափարներ</a></div>
+        <div class="link-card"><a href="https://example.com/graduation" target="_blank">Դիպլոմի Տոնակատարություն</a></div>
+    </div>
+</div>
 </body>
-
 </html>
